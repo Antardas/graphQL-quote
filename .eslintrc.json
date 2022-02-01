@@ -28,7 +28,13 @@
         "consistent": true
       }
     ],
-    "comma-dangle": ["error", "only-multiline"]
+    "comma-dangle": ["error", "only-multiline"],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id"]
+      }
+    ]
     // own rule -- End
   },
   "plugins": ["prettier"]
