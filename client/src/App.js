@@ -1,14 +1,17 @@
+import { useRoutes } from 'react-router-dom';
 import './App.css';
-import Login from './components/Login';
-import Profile from './components/Profile';
-import Register from './components/Register';
+import Navbar from './components/Navbar';
+import routes from './utils/routes';
+
 
 function App() {
+  const element = useRoutes(routes)
   return (
-    <div className="container mx-auto">
-      {/* <Login/>
-      <Register/> */}
-      <Profile/>
+    <div>
+      <Navbar/>
+      <div className="container mx-auto">
+        {element}
+      </div>
     </div>
   );
 }
