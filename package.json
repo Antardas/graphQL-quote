@@ -1,0 +1,27 @@
+{
+  "name": "graphql-quote",
+  "version": "1.0.0",
+  "description": "This Quote Posting App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd client && npm start\" --prefix \"cd server && npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antardas/graphQL-quote.git"
+  },
+  "keywords": [
+    "Graphql",
+    "Javascript"
+  ],
+  "author": "Antar Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antardas/graphQL-quote/issues"
+  },
+  "homepage": "https://github.com/Antardas/graphQL-quote#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

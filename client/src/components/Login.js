@@ -16,16 +16,17 @@ const Login = () => {
     }
 
     const handleOnSubmit = (e) => {
-console.log(formData, 'formData');
+        console.log(formData, 'formData');
         e.preventDefault();
     }
+
     return (
-        <div className='md:w-4/12 w-10/12 mx-auto'>
+    <div className='md:w-4/12 w-10/12 mx-auto'>
             <h5 className="text-2xl text-slate-900">Login</h5>
             <form onSubmit={handleOnSubmit} className='flex flex-col'>
                 <input 
                 type="email" 
-                className="border border-gray-800 py-1 px-3 text-xl focus:outline-none rounded" 
+                className="border border-gray-800 py-1 px-3 text-xl focus:outline-none rounded my-4" 
                 placeholder="Enter Your Email" 
                 name="email" 
                 value={formData?.email} 
@@ -36,6 +37,8 @@ console.log(formData, 'formData');
                 <input 
                 type="password" 
                 name="password" 
+                className="border border-gray-800 py-1 px-3 text-xl focus:outline-none rounded my-4"
+                placeholder="Enter your password"
                 value={formData?.password} 
                 onChange={handleOnChange} 
                 id="password"
